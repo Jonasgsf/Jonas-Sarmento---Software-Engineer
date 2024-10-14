@@ -10,7 +10,7 @@
 ### Conecte-se comigo
 
 
-[![Minha Página](https://jonasgsf.github.io/Jonas-Sarmento---Software-Engineer/assets/profile.png)](https://jonasgsf.github.io/Jonas-Sarmento---Software-Engineer/)
+[![Minha Página](https://img.shields.io/badge/-Meu%20Perfil%20na%20DIO-30A3DC?style=for-the-badge)](https://jonasgsf.github.io/Jonas-Sarmento---Software-Engineer/)
 [![Perfil DIO](https://img.shields.io/badge/-Meu%20Perfil%20na%20DIO-30A3DC?style=for-the-badge)](https://www.dio.me/users/jnas_sarmentof/)
 [![E-mail](https://img.shields.io/badge/-Email-000?style=for-the-badge&logo=microsoft-outlook&logoColor=E94D5F)](mailto:jonas.sarmentof@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-000?style=for-the-badge&logo=linkedin&logoColor=30A3DC)](www.linkedin.com/in/jonas-sarmento-915347233)
