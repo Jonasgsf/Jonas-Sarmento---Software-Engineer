@@ -5320,6 +5320,10 @@ textarea.form-control-lg {
   outline: 0;
 }
 
+.contacts{
+  display: flex;
+}
+
 .modal-backdrop {
   --bs-backdrop-zindex: 1050;
   --bs-backdrop-bg: #000;
@@ -6213,6 +6217,18 @@ textarea.form-control-lg {
   }
 }
 @media (max-width: 767.98px) {
+  .contacts{
+    display: grid !important;
+  }
+  #downloads{
+    display: grid;
+  }
+  .download{
+    margin-bottom: 10px;
+  }
+  .download > span{
+    display: none;
+  }
   .offcanvas-md.showing, .offcanvas-md.show:not(.hiding) {
     transform: none;
   }
@@ -9059,6 +9075,7 @@ textarea.form-control-lg {
   .text-sm-center {
     text-align: center !important;
   }
+
 }
 @media (min-width: 768px) {
   .float-md-start {
@@ -11637,6 +11654,12 @@ html {
 }
 
 @media (min-width: 576px) {
+  #downloads{
+    display: grid;
+  }
+  .download{
+    margin-bottom: 10px;
+  }
   .profile {
     height: 60vw;
     width: 60vw;
@@ -11662,6 +11685,13 @@ html {
   }
 }
 @media (min-width: 768px) {
+  #downloads{
+    display: flex;
+  }
+  .download{
+    margin-right: 5px;
+    margin-left: 5px;
+  }
   .profile {
     height: 50vw;
     width: 50vw;
@@ -11687,6 +11717,7 @@ html {
   }
 }
 @media (min-width: 992px) {
+  
   .profile {
     height: 40vw;
     width: 40vw;
