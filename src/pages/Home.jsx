@@ -192,9 +192,14 @@ export default function Home() {
                 </p>
                 <p className="mt-4 text-sm text-white">
                   Feel free to explore the {" "}
-                  <a href="/termos-de-uso" className="text-blue-500 hover:underline">
+                  <ScrollLink 
+                    to= "produtos"
+                    smooth={true}
+                    duration={1500}
+                    offset={-50}
+                    className="text-blue-500 hover:underline">
                     services
-                  </a> available.
+                  </ScrollLink> available.
                 </p>
               </div>
             </div>
@@ -253,12 +258,15 @@ export default function Home() {
           >
             Projects and clients
           </ScrollLink>
-          <Link
-            to="reuniao"
+          <ScrollLink
+            smooth={true}
+            duration={1500}
+            offset={-50}
+            to="contact"
             className="border border-blue-300 text-blue-300 px-8 py-4 rounded-full text-lg font-bold transition-all duration-500 hover:bg-blue-300 hover:text-white"
           >
             Contact
-          </Link>
+          </ScrollLink>
         </div>
 
         <style>
@@ -331,6 +339,7 @@ export default function Home() {
           `}
         </style>
       </section>
+      
 
       <section
         id="produtos"
@@ -477,24 +486,24 @@ export default function Home() {
         
         <div className="relative max-w-3xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-4 text-blue-500 ">
-            Pronto para impulsionar sua transformação digital?
+            Success story
           </h2>
-          <p className="mb-6">
-            Tecnologia é mais do que uma ferramenta, é um parceiro estratégico 
-            que molda um futuro mais humano e financeiramente robusto.
+          <p className="mb-6  text-gray-400">
+            I currently develop cutting-edge software for PeopleChange AI.
           </p>
-          <p className="mb-6">
-            Nossa abordagem pode transformar a sua organização. Entre em contato 
-            para uma demonstração personalizada e descubra como a IA pode levar 
-            sua empresa a outro patamar.
+          <p className="mb-6 text-gray-400">
+          People Change AI is a technology company that promotes solutions using cutting-edge artificial intelligence in a humanized way!
           </p>
-          <Link
-            to="/agendar-reuniao"
+          <ScrollLink
+            smooth={true}
+            duration={1500}
+            offset={-50}
+            to="contact"
             className="btn border border-blue-300 text-blue-300 px-8 py-4 rounded-full text-lg font-bold transition-all duration-500 hover:bg-blue-300 hover:text-white"
-            onClick={scrollToTopSlowly}
+            
           >
-            Marcar uma Reunião
-          </Link>
+            Contact now
+          </ScrollLink>
         </div>
       </section>
       <section id="about-Jonas" className="relative py-32 dark:text-white rounded-3xl">
@@ -510,7 +519,7 @@ export default function Home() {
 
         <div className="relative mx-auto max-w-7xl px-8 flex flex-col md:flex-row justify-center items-center gap-12">
           <div className="flex-1">
-            <h2 className="text-4xl md:text-5xl tracking-wide text-blue-500 transition-all mb-5 duration-700"
+            <h2 className="text-4xl md:text-5xl tracking-wide text-green-500 transition-all mb-5 duration-700"
               style={{ fontFamily: '"Nasalization", sans-serif' }}>
               About Jonas 
             </h2>
@@ -533,50 +542,164 @@ export default function Home() {
         </div>
       </section>
       <section
-        id="bob"
-        className="relative bg-cover bg-center text-white p-12 md:p-20 overflow-hidden"
-        style={{ backgroundImage: "url('banner.png')" }}
-      >
+          id="contact"
+          className="relative py-32 text-white  min-h-screen rounded-3xl"
+          style={{
+            backgroundImage: "url(banner.png)"
+          }}>
         <div
-          className="absolute inset-0 pointer-events-none"
-          style={{ backgroundImage: "url('banner.png')" }}
-        ></div>
+          className={`
+            relative mx-auto max-w-7xl px-8 flex flex-col md:flex-row
+            justify-between items-center gap-12
+            transition-all duration-700
+            "opacity-100 translate-y-0"
+          `}
+          style={{ zIndex: 20 }}
+        >
+          <div className="text-center md:text-left flex-1">
+            <h2
+              className="text-4xl md:text-5xl tracking-wide text-blue-500 transition-all mb-5 duration-700 opacity-100 translate-y-0"
+              style={{ fontFamily: '"Nasalization", sans-serif' }}
+            >
+              Contact{" "}
+              
+              <br />
+              <span className="text-2xl md:text-3xl text-blue-300">
+              Did you like what you saw?
+              </span>
+            </h2>
 
-        <div className="relative z-10 text-center max-w-3xl mx-auto">
-          <h2
-            className="text-4xl md:text-5xl font-bold text-green-400 mb-6 drop-shadow-[0_0_20px_rgba(255,125,0,0.8)]"
-            style={{ fontFamily: '"Nasalization", sans-serif' }}
-          >
-            Contact
-          </h2>
-          <p
-            className="text-lg text-gray-300 mb-8 leading-relaxed"
-            style={{ fontFamily: '"Nasalization", sans-serif' }}
-          >
-            Hello, I'm Jonas, first of all I would like to say that I'm very happy that you visited my website.
-          </p>
-
-          <div className="relative bg-gradient-to-r from-white/5 to-white/10 backdrop-blur-md border border-white/20 rounded-xl p-8 md:p-10 shadow-2xl shadow-blue-300/20">
-            <div className="chat-box overflow-y-auto h-64 mb-6 p-4 border border-blue-300 rounded-lg text-left">
-              <p
-                className="text-gray-100 animate-pulse tracking-wide"
-                style={{ fontFamily: '"Nasalization", sans-serif' }}
-              >
-                BOB : 👋 Olá! Como posso ajudar você hoje?
-              </p>
-            </div>
-            <div className="flex items-center gap-4">
-              <input
-                type="text"
-                placeholder="Digite sua pergunta..."
-                className="w-full px-6 py-4 bg-white/10 text-white placeholder-gray-400 border border-blue-300/50 rounded-lg focus:ring-2 focus:ring-blue-300 focus:outline-none transition-all duration-300"
-              />
-              <button className="bg-blue-300 hover:bg-green-600 text-white px-8 py-4 rounded-lg font-semibold shadow-[0_0_20px_rgba(255,125,0,0.6)] transition-all duration-300">
-                Enviar
-              </button>
+            <div className="text-lg md:text-xl ">
+              <div className="p-6 md:p-8 rounded-lg relative w-full max-w-[400px] md:max-w-[500px] h-auto">
+                <h3
+                  className="text-xl md:text-2xl font-semibold text-green-400"
+                  style={{ fontFamily: '"Nasalization", sans-serif' }}
+                >
+                  Get in touch now! 
+                </h3>
+                
+              </div>
             </div>
           </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 text-white">
+            {[
+              {
+                text: "Personal Github",
+                image: "./github.png",
+                link: "https://github.com/Jonasgsf"
+              },
+              {
+                text: "Academic Github",
+                image: "./github.png",
+                link: "https://github.com/Jonasgabs"
+              },
+              
+              {
+                text: "Applications and integrations with big data analysis",
+                image: "./potenciar.png",
+                link: "https://github.com/Jonasgsf"
+              },
+              {
+                text: "Linkedin",
+                image: "./linkedin.png",
+                link: "https://www.linkedin.com/in/jonas-sarmento/"
+              }
+            ].map((item, index) => (
+              <Link
+                key={index}
+                to={item.link}
+                target="_blank"
+                >
+                <li
+                  className="relative p-5 md:p-6 rounded-lg shadow-lg text-center transition-all duration-[1500ms] transform 
+                    opacity-100 translate-x-0
+                  hover:scale-105 neon-card w-full md:w-[240px] h-auto md:min-h-[180px] overflow-hidden flex flex-col items-center"
+                >
+                  <img src={item.image} alt="Ícone" className="h-12 w-12 mb-4" />
+                  <p className="mt-2 text-md text-white px-3">
+                    {item.text}
+                  </p>
+                  <div
+                    className={`neon-border ${
+                      index % 2 != 0 ? "neon-blue" : "neon-green"
+                    }`}
+                  />
+                </li>
+              </Link>
+            ))}
+          </div>
         </div>
+
+
+        <style>
+          {`
+            .neon-glow {
+              position: relative;
+              transition: box-shadow 0.5s ease-in-out;
+              overflow: hidden;
+            }
+            .neon-glow:hover {
+              border: 2px solid rgba(0, 72, 255, 0.7);
+              box-shadow: 0 0 30px rgba(0, 72, 255, 0.8);
+            }
+            .neon-card {
+              backdrop-filter: blur(10px);
+              border: 1px solid rgba(255, 255, 255, 0.2);
+              box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+              transition: all 0.5s ease-in-out;
+            }
+            .neon-card:hover {
+              border: 2px solid rgba(0, 255, 100, 0.9);
+              box-shadow: 0 0 30px rgba(0, 255, 200, 0.8);
+            }
+            .neon-card:nth-child(odd):hover {
+              border-color: rgba(0, 72, 255, 0.6);
+              box-shadow: 0 0 30px rgba(0, 72, 255, 0.6);
+            }
+            .neon-border {
+              position: absolute;
+              inset: 0;
+              border-radius: inherit;
+              transition: box-shadow 0.5s ease-in-out;
+            }
+            .neon-blue:hover {
+              border: 2px solid rgba(0, 72, 255, 0.6);
+              box-shadow: 0 0 30px rgba(0, 72, 255, 0.6);
+            }
+            .neon-green:hover {
+              border: 2px solid rgba(0, 255, 100, 0.6);
+              box-shadow: 0 0 30px rgba(0, 255, 100, 0.6);
+            }
+            @media (max-width: 1024px) {
+              .neon-glow {
+                width: 100%;
+                max-width: 100%;
+              }
+              .neon-card {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+              }
+            }
+            @media (max-width: 768px) {
+              .neon-card {
+                width: 100%;
+                height: auto;
+                padding: 20px;
+              }
+            }
+            @media (max-width: 480px) {
+              .neon-glow {
+                padding: 20px;
+              }
+              .neon-card {
+                width: 100%;
+                height: auto;
+                padding: 15px;
+              }
+            }
+          `}
+        </style>
       </section>
 
       {/**
